@@ -1,0 +1,16 @@
+p {
+  padding: 15px;
+  color: white;
+  background-color: crimson;
+}
+nav {
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(167, 26, 26, 0.7);
+  width: 100%;
+}
+
+li {
+  display: inline-block;
+}
