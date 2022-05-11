@@ -10,7 +10,22 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { DropDownDirective } from './directives/drop-down.directive';
-
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from '@angular/common';
+// const routes: Routes = [
+//   {
+//     path: '',
+//     component: RecipesComponent,
+//   },
+//   {
+//     path: 'customers',
+//     loadChildren: () =>
+//       import('./layouts/customers/customers.module').then(
+//         (m) => m.CustomersModule
+//       ),
+//   },
+// ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +36,9 @@ import { DropDownDirective } from './directives/drop-down.directive';
     RecipeDetailsComponent,
     RecipeItemComponent,
     RecipeListComponent,
-    DropDownDirective
+    DropDownDirective,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
