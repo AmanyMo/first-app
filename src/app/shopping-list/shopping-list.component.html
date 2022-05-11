@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col">
-    <shopping-list-edit> </shopping-list-edit>
-    <hr />
+    <shopping-list-edit (ingredientsAdded)="onIngredientAdded($event)"> </shopping-list-edit>
+    <br />
     <ul class="list-group">
       <a
         style="cursor: pointer"
